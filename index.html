@@ -4,25 +4,30 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/lesponsive.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="main.Js"></script>
     <title>Sneakers</title>
   </head>
 
   <body>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap"
-      rel="stylesheet"
-    />
     <header id="header">
       <h1 class="site-title">Sneakers</h1>
+
       <nav id="navi">
-        <ul class="navi-manu">
+        <ul class="navi-menu">
           <li><a href="#pickup">PICK UP</a></li>
           <li><a href="#feature">FEATURE</a></li>
           <li><a href="#contact">CONTACT</a></li>
@@ -30,14 +35,15 @@
         <ul class="navi-sns">
           <li><a href="https://twitter.com/" target="_blank">Twitter</a></li>
           <li>
-            <a href="https://www.facebook.com" target="_blank">facebook</a>
+            <a href="https://www.facebook.com/" target="_blank">facebook</a>
           </li>
           <li>
-            <a href="https://www.instagram.com" target="_blank">instagram</a>
+            <a href="https://www.instagram.com/" target="_blank">instagram</a>
           </li>
         </ul>
       </nav>
-      <div class="toggle_btn">
+
+      <div class="toggle-btn">
         <span></span>
         <span></span>
         <span></span>
@@ -60,7 +66,7 @@
 
       <section id="pickup">
         <h2 class="section-title">PICK UP</h2>
-        <ul class="slick-area">
+        <ul class="slider">
           <li>
             <img
               src="images/pickup_image1.jpg"
@@ -109,109 +115,103 @@
               alt="ピックアップ8 テキストテキスト"
             />
           </li>
-          <li>
-            <img
-              src="images/pickup_image9.jpg"
-              alt="ピックアップ9 テキストテキスト"
-            />
-          </li>
         </ul>
       </section>
 
       <section id="feature">
         <h2 class="section-title">FEATURE</h2>
-        <div class="grid">
-          <div class="grid-item">
-            <img class="fade-in" src="images/feature_image1.jpg" alt="" />
-            <div class="item-box">
-              <p class="item-title">category</p>
-              <p class="item-text">
-                テキストテキストテキストテキストテキストテキストテキストテキスト
+        <ul class="grid-area">
+          <li>
+            <img src="images/feature_image1.jpg" alt="" />
+            <div class="item-content">
+              <p class="grid-title">category</p>
+              <p class="grid-text">
+                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
               </p>
-              <p class="item-date">XXXX.XX.XX</p>
+              <p class="grid-date">XXXX.XX.XX</p>
             </div>
-          </div>
-          <div class="grid-item">
-            <img class="fade-in" src="images/feature_image2.jpg" alt="" />
-            <div class="item-box">
-              <p class="item-title">category</p>
-              <p class="item-text">
-                テキストテキストテキストテキストテキストテキストテキストテキスト
+          </li>
+          <li>
+            <img src="images/feature_image2.jpg" alt="" />
+            <div class="item-content">
+              <p class="grid-title">category</p>
+              <p class="grid-text">
+                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
               </p>
-              <p class="item-date">XXXX.XX.XX</p>
+              <p class="grid-date">XXXX.XX.XX</p>
             </div>
-          </div>
-          <div class="grid-item">
-            <img class="fade-in" src="images/feature_image3.jpg" alt="" />
-            <div class="item-box">
-              <p class="item-title">category</p>
-              <p class="item-text">
-                テキストテキストテキストテキストテキストテキストテキストテキスト
+          </li>
+          <li>
+            <img src="images/feature_image3.jpg" alt="" />
+            <div class="item-content">
+              <p class="grid-title">category</p>
+              <p class="grid-text">
+                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
               </p>
-              <p class="item-date">XXXX.XX.XX</p>
+              <p class="grid-date">XXXX.XX.XX</p>
             </div>
-          </div>
-          <div class="grid-item">
-            <img class="fade-in" src="images/feature_image4.jpg" alt="" />
-            <div class="item-box">
-              <p class="item-title">category</p>
-              <p class="item-text">
-                テキストテキストテキストテキストテキストテキストテキストテキスト
+          </li>
+          <li>
+            <img src="images/feature_image4.jpg" alt="" />
+            <div class="item-content">
+              <p class="grid-title">category</p>
+              <p class="grid-text">
+                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
               </p>
-              <p class="item-date">XXXX.XX.XX</p>
+              <p class="grid-date">XXXX.XX.XX</p>
             </div>
-          </div>
-          <div class="grid-item">
-            <img class="fade-in" src="images/feature_image5jpg.jpg" alt="" />
-            <div class="item-box">
-              <p class="item-title">category</p>
-              <p class="item-text">
-                テキストテキストテキストテキストテキストテキストテキストテキスト
+          </li>
+          <li>
+            <img src="images/feature_image5jpg.jpg" alt="" />
+            <div class="item-content">
+              <p class="grid-title">category</p>
+              <p class="grid-text">
+                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
               </p>
-              <p class="item-date">XXXX.XX.XX</p>
+              <p class="grid-date">XXXX.XX.XX</p>
             </div>
-          </div>
-          <div class="grid-item">
-            <img class="fade-in" src="images/feature_image6.jpg" alt="" />
-            <div class="item-box">
-              <p class="item-title">category</p>
-              <p class="item-text">
-                テキストテキストテキストテキストテキストテキストテキストテキスト
+          </li>
+          <li>
+            <img src="images/feature_image6.jpg" alt="" />
+            <div class="item-content">
+              <p class="grid-title">category</p>
+              <p class="grid-text">
+                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
               </p>
-              <p class="item-date">XXXX.XX.XX</p>
+              <p class="grid-date">XXXX.XX.XX</p>
             </div>
-          </div>
-          <div class="grid-item">
-            <img class="fade-in" src="images/feature_image7.jpg" alt="" />
-            <div class="item-box">
-              <p class="item-title">category</p>
-              <p class="item-text">
-                テキストテキストテキストテキストテキストテキストテキストテキスト
+          </li>
+          <li>
+            <img src="images/feature_image7.jpg" alt="" />
+            <div class="item-content">
+              <p class="grid-title">category</p>
+              <p class="grid-text">
+                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
               </p>
-              <p class="item-date">XXXX.XX.XX</p>
+              <p class="grid-date">XXXX.XX.XX</p>
             </div>
-          </div>
-          <div class="grid-item">
-            <img class="fade-in" src="images/feature_image8.jpg" alt="" />
-            <div class="item-box">
-              <p class="item-title">category</p>
-              <p class="item-text">
-                テキストテキストテキストテキストテキストテキストテキストテキスト
+          </li>
+          <li>
+            <img src="images/feature_image8.jpg" alt="" />
+            <div class="item-content">
+              <p class="grid-title">category</p>
+              <p class="grid-text">
+                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
               </p>
-              <p class="item-date">XXXX.XX.XX</p>
+              <p class="grid-date">XXXX.XX.XX</p>
             </div>
-          </div>
-          <div class="grid-item">
-            <img class="fade-in" src="images/feature_image9.jpg" alt="" />
-            <div class="item-box">
-              <p class="item-title">category</p>
-              <p class="item-text">
-                テキストテキストテキストテキストテキストテキストテキストテキスト
+          </li>
+          <li>
+            <img src="images/feature_image9.jpg" alt="" />
+            <div class="item-content">
+              <p class="grid-title">category</p>
+              <p class="grid-text">
+                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
               </p>
-              <p class="item-date">XXXX.XX.XX</p>
+              <p class="grid-date">XXXX.XX.XX</p>
             </div>
-          </div>
-        </div>
+          </li>
+        </ul>
       </section>
 
       <section id="contact">
@@ -236,18 +236,30 @@
             <form action="#">
               <dl>
                 <dt><label for="name">Name</label></dt>
+                <dd><input type="text" id="name" name="your-name" /></dd>
                 <dt><label for="mail">Mail:</label></dt>
+                <dd><input type="text" id="mail" name="your-email" /></dd>
                 <dt><label for="message">Message:</label></dt>
+                <dd><input type="text" id="message" name="your-message" /></dd>
               </dl>
               <div class="button"><input type="submit" value="SEND" /></div>
             </form>
           </div>
         </div>
       </section>
+      <div id="page-top">Top</div>
     </main>
 
     <footer id="footer">
       <p>&copy;Sneakers</p>
     </footer>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
   </body>
 </html>
