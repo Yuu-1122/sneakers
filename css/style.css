@@ -26,7 +26,7 @@ li {
 
 header {
   width: 100%;
-  display: flex;
+  display: flexbox;
   justify-content: space-between;
   padding: 20px 40px;
   position: fixed;
@@ -306,9 +306,14 @@ header {
   width: 45%;
 }
 
+#contact .contact-form dd {
+  margin: 0;
+}
+
 #contact .contact-form input,
 #contact .contact-form textarea {
   width: 100%;
+  box-sizing: border-box;
   background-color: #fff;
   padding: 10px;
   margin-bottom: 20px;

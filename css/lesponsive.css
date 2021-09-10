@@ -12,12 +12,17 @@
 
   .toggle-btn {
     right: 20px;
+    box-sizing: border-box;
   }
 
   .video {
     width: 100%;
     height: 100vh;
     object-fit: cover;
+  }
+
+  ul {
+    padding: 0;
   }
 
   #pickup {
@@ -44,12 +49,25 @@
     flex-direction: column;
   }
 
-  #contact .contact-info,
-  #contact .contact-form {
-    width: 100%;
+  #contact .contact-box {
+    display: block;
   }
 
-  #contact .contact-form .button input {
+  #contact .contact-text,
+  #contact .contact-form {
+    margin: 0;
     width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  #contact .contact-text br {
+    display: none;
+  }
+
+  #contact .contact-form input {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
   }
 }
