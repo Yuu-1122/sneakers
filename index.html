@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/lesponsive.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       rel="stylesheet"
       type="text/css"
@@ -217,29 +220,22 @@
       <section id="contact">
         <h2 class="section-title">CONTACT</h2>
         <div class="contact-box">
-          <div class="contact-text">
-            <p>テキストテキストテキスト</p>
-            <p>
-              テキストテキストテキストテキストテキストテキストテキストテキスト<br />
-              テキストテキストテキストテキストテキストテキストテキストテキスト<br />
-              テキストテキストテキストテキストテキストテキストテキストテキスト<br />
-              テキストテキストテキストテキスト
-            </p>
-            <p>
-              テキストテキストテキストテキストテキストテキストテキストテキスト<br />
-              テキストテキストテキストテキストテキストテキストテキストテキスト<br />
-              テキストテキストテキストテキストテキストテキストテキストテキスト<br />
-              テキストテキストテキストテキスト
-            </p>
-          </div>
+          <ul class="contact-menu">
+            <li><a href="#">ブランド一覧</a></li>
+            <li><a href="#">ブログ</a></li>
+            <li><a href="#">返金ポリシー</a></li>
+            <li><a href="#">スタッフ募集</a></li>
+            <li><a href="#">特定商取引法に基づく表記</a></li>
+            <li><a href="#">プライバシーポリシー</a></li>
+          </ul>
           <div class="contact-form">
             <form action="#">
               <dl>
-                <dt><label for="name">Name</label></dt>
+                <dt><label for="name">名前</label></dt>
                 <dd><input type="text" id="name" name="your-name" /></dd>
-                <dt><label for="mail">Mail:</label></dt>
+                <dt><label for="mail">メールアドレス:</label></dt>
                 <dd><input type="text" id="mail" name="your-email" /></dd>
-                <dt><label for="message">Message:</label></dt>
+                <dt><label for="message">メッセージ:</label></dt>
                 <dd><input type="text" id="message" name="your-message" /></dd>
               </dl>
               <div class="button"><input type="submit" value="SEND" /></div>
