@@ -9,11 +9,9 @@ body {
   color: #121212;
   line-height: 1.7;
   margin: 0;
-}
-
-a {
-  color: #121212;
-  text-decoration: none;
+  padding: 0;
+  width: 100%;
+  font-family: "Noto Sans JP", sans-serif;
 }
 
 img {
@@ -24,28 +22,27 @@ li {
   list-style: none;
 }
 
-header {
+#header {
   width: 100%;
-  display: flexbox;
+  display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 20px 40px;
   position: fixed;
-  z-index: 10;
+  z-index: 20;
+  box-sizing: border-box;
   background-color: #fff;
 }
 
 .site-title {
-  line-height: 1px;
-}
-
-.site-title a {
-  display: block;
+  margin: 0;
 }
 
 .section-title {
   font-size: 2.25rem;
   margin-bottom: 30px;
-  text-align: center;
+  display: inline-flex;
+  border-bottom: solid 6px #e03131;
 }
 
 #navi {
@@ -67,6 +64,11 @@ header {
 }
 #navi a {
   color: #fff;
+  text-decoration: none;
+}
+
+#navi a:hover {
+  filter: opacity(70%);
 }
 .open #navi {
   left: 0;
@@ -93,7 +95,6 @@ header {
 .toggle-btn {
   display: block;
   position: fixed;
-  top: 25px;
   right: 45px;
   width: 30px;
   height: 30px;
@@ -161,18 +162,22 @@ header {
 
 #pickup {
   width: 100%;
-  padding: 100px 0 50px 0;
+  padding: 100px 50px;
+  position: relative;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 #pickup img {
   width: 60vh;
   height: auto;
+  margin: auto;
 }
 
 #pickup .slider {
   font-size: 0;
-  margin: 0 auto;
-  width: 94%;
+  margin: 0;
+  padding: 0;
 }
 
 .slider .slick-slide {
@@ -240,6 +245,8 @@ header {
   max-width: 1240px;
   padding: 100px 16px 50px 16px;
   margin: -50px auto 10px auto;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 #feature img {
@@ -262,6 +269,7 @@ header {
 #feature .item-content {
   padding: 30px;
   transition: all 0.3s ease;
+  text-align: left;
 }
 
 #feature .grid-title {
@@ -283,10 +291,29 @@ header {
   color: #fff;
   background-color: #121212;
   padding: 50px 0;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 #contact .section-title {
   color: #fff;
+}
+
+#contact .contact-menu {
+  padding: 0;
+}
+
+#contact .contact-menu li {
+  padding-bottom: 35px;
+}
+
+#contact .contact-menu a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#contact .contact-menu a:hover {
+  filter: opacity(70%);
 }
 
 #contact .contact-box {
@@ -295,15 +322,12 @@ header {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  text-align: left;
 }
 
-#contact .contact-text p {
-  margin-bottom: 30px;
-}
-
-#contact .contact-text,
+#contact .contact-menu,
 #contact .contact-form {
-  width: 45%;
+  width: 50%;
 }
 
 #contact .contact-form dd {
@@ -345,7 +369,7 @@ header {
   background: #fff;
   color: #121212;
   position: fixed;
-  right: 20px;
+  right: 50px;
   bottom: 20px;
   border-radius: 50%;
   width: 55px;
@@ -354,4 +378,9 @@ header {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+}
+
+#page-top:hover {
+  color: #fff;
+  background-color: #121212;
 }
